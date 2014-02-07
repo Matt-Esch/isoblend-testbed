@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Blend Testbed</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <p id="args">
+        <span>
+        <br />
+        <span>Image set:
+        <select id="source">
+            <option value="0" selected>RGA variations</option>
+            <option value="1">Rainbow Bubbles (80%)</option>
+            <option value="2">Rainbow Bubbles (solid)</option>
+        </select></span>
+        </span>
+        <img id="over" src="">
+        <span>
+        <select id="mode">
+            <optgroup label="Separable">
+                <option>Normal</option>
+                <option>Compatible</option>
+                <option>Multiply</option>
+                <option>Screen</option>
+                <option>Overlay</option>
+                <option>Darken</option>
+                <option>Lighten</option>
+                <option>ColorDodge</option>
+                <option>ColorBurn</option>
+                <option>HardLight</option>
+                <option>SoftLight</option>
+                <option>Difference</option>
+                <option>Exclusion</option>
+            </optgroup>
+            <optgroup label="Nonseparable">
+                <option>Hue</option>
+                <option>Saturation</option>
+                <option>Color</option>
+                <option>Luminosity</option>
+            </optgroup>
+        </select> blend over</span>
+        <img id="under" src="">
+        <span>Page Background:
+        <select id="bg">
+            <option class="dark" value="black" selected>Black</option>
+            <option class="dark" value="25">25% Grey</option>
+            <option class="dark" value="50" selected>50% Grey</option>
+            <option class="lite" value="75">75% Grey</option>
+            <option class="lite" value="white">White</option>
+            <option class="lite" value="grey-check-med">Grey Checkered</option>
+            <option class="lite" value="pink-check-med">Pink Checkered</option>
+            <option class="dark" value="red">Red</option>
+            <option class="lite" value="green">Green</option>
+            <option class="dark" value="blue">Blue</option>
+        </select></span>
+    </p>
+    <p id="content">
+        <span>Result<canvas id="out"></canvas></span>
+        <span>Photoshop<canvas id="ref"></canvas></span>
+    </p>
+    <dl>
+        <dt>Total Pixels:</dt><dd id="total"></dd>
+        <dt>Different Pixels:</dt><dd id="wrong"></dd>
+        <dt>Std Deviation:</dt><dd id="stddev"></dd>
+        <dt>Performance:</dt><dd id="perf"></dd>
+    </dl>
+    <div id="output">
+    </div>
+    <script type="text/javascript" src="bundle.js"></script>
+</body>
+</html>
