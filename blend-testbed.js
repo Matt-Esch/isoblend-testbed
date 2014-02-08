@@ -1,6 +1,8 @@
 var byId = require("by/id")
 var console = require("global/console")
 var document = require("global/document")
+var isoblend = require("isoblend")
+var canvasBlend = require("../canvas-blend")
 
 var data = {}, contexts = {}, size
 
@@ -100,7 +102,7 @@ function doWork() {
         contexts.out.canvas.height = size.height;
         drawImage(contexts.out, 'under');
         var t = new Date;
-        contexts.over.blendOnto(contexts.out, mode.value);
+        canvasBlend(isoblend[mode.value],contexts.over, contexts.out, contexts.out, { outX: 500, outY: 500 });
         totalTime += (new Date) - t;
     }
     calculateStatistics(mode.value,iterations,totalTime);

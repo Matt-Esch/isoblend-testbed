@@ -19,27 +19,19 @@
         <img id="over" src="">
         <span>
         <select id="mode">
-            <optgroup label="Separable">
-                <option>Normal</option>
-                <option>Compatible</option>
-                <option>Multiply</option>
-                <option>Screen</option>
-                <option>Overlay</option>
-                <option>Darken</option>
-                <option>Lighten</option>
-                <option>ColorDodge</option>
-                <option>ColorBurn</option>
-                <option>HardLight</option>
-                <option>SoftLight</option>
-                <option>Difference</option>
-                <option>Exclusion</option>
-            </optgroup>
-            <optgroup label="Nonseparable">
-                <option>Hue</option>
-                <option>Saturation</option>
-                <option>Color</option>
-                <option>Luminosity</option>
-            </optgroup>
+            <option value="normal" selected>Normal</option>
+            <option value="compatible">Compatible</option>
+            <option value="multiply">Multiply</option>
+            <option value="screen">Screen</option>
+            <option value="overlay">Overlay</option>
+            <option value="darken">Darken</option>
+            <option value="lighten">Lighten</option>
+            <option value="dodge">ColorDodge</option>
+            <option value="burn">ColorBurn</option>
+            <option value="hardlight">HardLight</option>
+            <option value="softlight">SoftLight</option>
+            <option value="difference">Difference</option>
+            <option value="exclusion">Exclusion</option>
         </select> blend over</span>
         <img id="under" src="">
         <span>Page Background:
@@ -58,7 +50,7 @@
     </p>
     <p id="content">
         <span>Result<canvas id="out"></canvas></span>
-        <span>Photoshop<canvas id="ref"></canvas></span>
+        <span>Adobe® Photoshop®<canvas id="ref"></canvas></span>
     </p>
     <dl>
         <dt>Total Pixels:</dt><dd id="total"></dd>
