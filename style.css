@@ -1,16 +1,89 @@
-body { text-align:center; font-family:sans-serif; font-size:85%; }
-body.dark { color:#fff }
-body.lite { color:#000 }
-img, canvas { vertical-align:middle }
-body.dark img, body.dark canvas { border:1px solid #fff; }
-body.lite img, body.lite canvas { border:1px solid #000; }
-#expected { display: block; }
-#content span { display:inline-block }
-#content span canvas { display:block }
-#output { font-size:9pt; font-family:monospace; white-space:pre;}
-#args * { vertical-align:middle;}
-#args span { display:inline-block;}
-#args select { display:block; width: 200px;}
-dl { width:20em; margin:1em auto;}
-dt { float:left; clear:left; width:10em; text-align:right; padding-right:0.6em; font-weight:bold;}
-dd { display:block; margin-left:10em; text-align:left; }
+body {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 85%;
+}
+
+body.dark {
+    color: #fff;
+}
+
+body.lite {
+    color: #000;
+}
+
+img, canvas {
+    vertical-align: middle;
+}
+
+body.dark img, body.dark canvas {
+    border: 1px solid #fff;
+}
+
+body.lite img, body.lite canvas {
+    border: 1px solid #000;
+}
+
+body.dark a {
+    color: #ccc;
+}
+
+body.lite a {
+    color: #333;
+}
+
+#expected {
+    display: block;
+}
+
+#content span {
+    display: inline-block;
+}
+
+#content span canvas {
+    display: block;
+}
+
+#output {
+    font-size: 9pt;
+    font-family: monospace;
+    white-space: pre;
+}
+
+#args * {
+    vertical-align: middle;
+}
+
+#args span {
+    display: inline-block;
+}
+
+#args select {
+    display: block;
+    width: 200px;
+}
+
+dl {
+    width: 20em;
+    margin: 1em auto;
+}
+
+dt {
+    float: left;
+    clear: left;
+    width: 10em;
+    text-align: right;
+    padding-right: 0.6em;
+    font-weight: bold;
+}
+
+dd {
+    display: block;
+    margin-left: 10em;
+    text-align: left;
+}
+
+.notice {
+    display: block;
+    margin-top: 2em;
+}
