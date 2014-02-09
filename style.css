@@ -4,6 +4,7 @@ body.lite { color:#000 }
 img, canvas { vertical-align:middle }
 body.dark img, body.dark canvas { border:1px solid #fff; }
 body.lite img, body.lite canvas { border:1px solid #000; }
+#expected { display: block; }
 #content span { display:inline-block }
 #content span canvas { display:block }
 #output { font-size:9pt; font-family:monospace; white-space:pre;}
